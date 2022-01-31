@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style1.css">
+  <script src="exercice1.js" defer></script>
+  <title>TP2</title>
+</head>
+
+<body>
+  <header>
+    <button><a href="exercice2.html">Aller à l'exercice 2</a></button>
+  </header>
+  <form action="" id="commande" name="commande">
+    <h1>Formulaire de paiement</h1>
+    <p>Les champs obligatoires sont suivis par <strong><abbr title="required">*</abbr></strong>.</p>
+    <section>
+      <h2>Informations de contact</h2>
+      <p>
+        <label for="lastname">
+          <span>Nom :</span>
+          <strong><abbr title="required">*</abbr></strong>
+        </label>
+        <input type="text" id="lastname" name="userlastname">
+        <span id="errornom"></span>
+      </p>
+      <p>
+        <label for="firstname">
+          <span>Prenom :</span>
+          <strong><abbr title="required">*</abbr></strong>
+        </label>
+        <input type="text" id="firstname" name="userfirstname">
+        <span id="errorprenom"></span>
+      </p>
+      <p>
+        <label for="address">
+          <span>Adresse :</span>
+          <strong><abbr title="required">*</abbr></strong>
+        </label>
+        <input type="text" id="address" name="useraddress">
+        <span id="erroradresse"></span>
+      </p>
+      <p>
+        <label for="code">
+          <span>Code Postal :</span>
+          <strong><abbr title="required">*</abbr></strong>
+        </label>
+        <input type="text" id="code" name="usercode">
+        <span id="errorcodepostal"></span>
+      </p>
+      <p>
+        <label for="city">
+          <span>Ville :</span>
+          <strong><abbr title="required">*</abbr></strong>
+        </label>
+        <input type="text" id="city" name="usercity">
+        <span id="errorville"></span>
+      </p>
+      <p>
+        <label for="country">
+          <span>Pays :</span>
+          <strong><abbr title="required">*</abbr></strong>
+        </label>
+        <select id="country" name="usercountry">
+          <option value="0">Choisir</option>
+          <option value="1">Canada</option>
+          <option value="2">Etats-Unis</option>
+        </select>
+        <span id="errorpays"></span>
+      </p>
+      <p>
+        <label for="date">
+          <span>Date de livraison :</span>
+          <strong><abbr title="required">*</abbr></strong>
+        </label>
+        <input type="date" id="date" name="date">
+        <span id="errordate"></span>
+      </p>
+      <h2>Tarification</h2>
+      <p>
+        <label for="product">
+          <span>Nombre de Produit (10$ l'unité) :</span>
+          <strong><abbr title="required">*</abbr></strong>
+        </label>
+        <input type="text" id="product" name="product">
+        <span id="errorproduit"></span>
+      </p>
+      <p>
+        <label for="prixHt">
+          <span>Prix hors taxe :</span>
+          <strong><abbr title="required">&nbsp;&nbsp;</abbr></strong>
+        </label>
+        <input type="text" id="prixHt" name="prixHt">
+      </p>
+      <p>
+        <label for="TPS">
+          <span>Montant TPS (5%) :</span>
+          <strong><abbr title="required">&nbsp;&nbsp;</abbr></strong>
+        </label>
+        <input type="text" id="TPS" name="TPS">
+      </p>
+      <p>
+        <label for="TVQ">
+          <span>Montant TVQ (9,97%) :</span>
+          <strong><abbr title="required">&nbsp;&nbsp;</abbr></strong>
+        </label>
+        <input type="text" id="TVQ" name="TVQ">
+      </p>
+      <p>
+        <label for="prixTTC">
+          <span>Prix taxes Comprises :</span>
+          <strong><abbr title="required">&nbsp;&nbsp;</abbr></strong>
+        </label>
+        <input type="text" id="prixTTC" name="prixTTC">
+      </p>
+    </section>
+    <section>
+      <h2>Informations de paiement</h2>
+      <h3 align="center">Cartes acceptées</h3>
+      <div align="center">
+        <img src="Images/visa.jpeg" alt="logo visa" width="10%">
+        <img src="Images/mastercard.png" alt="logo mastercard" width="8%">
+      </div>
+      <p>
+        <label for="number">
+          <span>Numéro :</span>
+          <strong><abbr title="required">*</abbr></strong>
+        </label>
+        <input type="text" id="number" name="cardnumber">
+        <span id="errornumero"></span>
+        <span id="carte"></span>
+      </p>
+    </section>
+    <section>
+      <p> <button type="submit" value="valider">Valider le paiement</button> </p>
+    </section>
+    <div id="message"></div>
+  </form>
+</body>
+
+</html>
